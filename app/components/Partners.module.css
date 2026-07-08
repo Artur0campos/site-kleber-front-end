@@ -1,0 +1,59 @@
+.partnersSection {
+  background-color: var(--bg-light);
+  padding: 5rem 0;
+  border-top: 1px solid rgba(25, 35, 45, 0.05);
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: rgba(25, 35, 45, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.logoItem {
+  background-color: rgba(25, 35, 45, 0.02);
+  border: 1px solid rgba(25, 35, 45, 0.06);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  color: rgba(25, 35, 45, 0.45);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.logoItem:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(135, 76, 35, 0.25);
+  color: var(--color-bronze);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(25, 35, 45, 0.03);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

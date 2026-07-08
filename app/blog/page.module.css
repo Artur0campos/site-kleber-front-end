@@ -1,0 +1,239 @@
+.blogPage {
+  padding-top: 140px;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+}
+
+/* Header */
+.pageHeader {
+  margin-bottom: 4rem;
+}
+
+.pageTitle {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.pageDescription {
+  font-size: 1.05rem;
+  color: rgba(25, 35, 45, 0.6);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* Grid de Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Link wrapper */
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Card */
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(25, 35, 45, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  border-color: rgba(135, 76, 35, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(25, 35, 45, 0.08),
+              0 8px 16px rgba(25, 35, 45, 0.04);
+}
+
+/* Imagem do Card */
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: rgba(25, 35, 45, 0.04);
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardImagePlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(25, 35, 45, 0.04) 0%, rgba(135, 76, 35, 0.06) 100%);
+  color: rgba(25, 35, 45, 0.2);
+}
+
+.cardImageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(25, 35, 45, 0.05), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Corpo do Card */
+.cardBody {
+  padding: 1.75rem 2rem 0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.cardCategory {
+  color: var(--color-bronze);
+  text-transform: uppercase;
+}
+
+.cardDate {
+  color: rgba(25, 35, 45, 0.4);
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
+  transition: color 0.3s ease;
+}
+
+.card:hover .cardTitle {
+  color: var(--color-bronze);
+}
+
+.cardSubtitle {
+  font-size: 0.88rem;
+  color: rgba(25, 35, 45, 0.6);
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Footer do Card */
+.cardFooter {
+  padding: 1.25rem 2rem 1.75rem;
+}
+
+.readMore {
+  color: var(--color-bronze);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.card:hover .readMore {
+  gap: 0.85rem;
+}
+
+/* Estado vazio */
+.emptyState {
+  text-align: center;
+  padding: 4rem 0;
+  color: rgba(25, 35, 45, 0.5);
+  font-size: 1.05rem;
+}
+
+.emptyState p {
+  margin-bottom: 1.5rem;
+}
+
+/* Voltar */
+.backWrapper {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(25, 35, 45, 0.08);
+}
+
+.backLink {
+  color: var(--color-bronze);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--color-bronze-hover);
+  gap: 0.75rem;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blogPage {
+    padding-top: 120px;
+  }
+
+  .pageTitle {
+    font-size: 2.25rem;
+  }
+
+  .pageHeader {
+    margin-bottom: 3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardBody {
+    padding: 1.25rem 1.5rem 0.5rem;
+  }
+
+  .cardFooter {
+    padding: 1rem 1.5rem 1.5rem;
+  }
+}

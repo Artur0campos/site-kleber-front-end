@@ -1,0 +1,132 @@
+.locationsSection {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.titleGroup {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-light);
+  line-height: 1.25;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.card {
+  background-color: rgba(233, 233, 233, 0.02);
+  border: 1px solid rgba(233, 233, 233, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(135, 76, 35, 0.4);
+  background-color: rgba(233, 233, 233, 0.04);
+}
+
+.mapContainer {
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(25, 35, 45, 0.2);
+}
+
+.mapLine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: rgba(135, 76, 35, 0.45);
+}
+
+.mapPin {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-bronze);
+  border-radius: 50%;
+  z-index: 5;
+  box-shadow: 0 0 0 0 rgba(135, 76, 35, 0.7);
+  animation: pulsePin 2s infinite;
+}
+
+@keyframes pulsePin {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(135, 76, 35, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(135, 76, 35, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(135, 76, 35, 0);
+  }
+}
+
+.cardBody {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted-light);
+  line-height: 1.6;
+}
+
+.iconWrapper {
+  color: var(--color-bronze);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.iconWrapper svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .cardBody {
+    padding: 2rem;
+  }
+}

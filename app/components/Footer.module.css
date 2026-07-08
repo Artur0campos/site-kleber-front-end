@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 6rem 0 3rem 0;
+  border-top: 1px solid rgba(233, 233, 233, 0.08);
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.25fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoText {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+
+.logoText span {
+  color: var(--color-bronze);
+  font-weight: 300;
+}
+
+.brandDesc {
+  font-size: 0.95rem;
+  color: var(--text-muted-light);
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+.colTitle {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-bronze);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.linksList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: var(--text-muted-light);
+}
+
+.link:hover {
+  color: var(--text-light);
+  padding-left: 0.25rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted-light);
+}
+
+.contactInfo a:hover {
+  color: var(--text-light);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(233, 233, 233, 0.08);
+  margin-bottom: 2rem;
+}
+
+/* Bottom Bar */
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(233, 233, 233, 0.45);
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.bottomLink:hover {
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .topRow {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .bottomLinks {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
