@@ -103,9 +103,9 @@ const AREAS_DATA = [
 export default function PracticeAreas() {
   return (
     <section id="areas" className={`${styles.practiceSection} bg-texture-light`}>
-      <div className={`container ${styles.grid}`}>
-        {/* Left Column: Heading */}
-        <div className={styles.leftCol}>
+      <div className="container">
+        {/* Top Header */}
+        <div className={styles.header}>
           <span className="section-subtitle">Áreas de Atuação</span>
           <h2 className={styles.title}>Especialidades para cada desafio.</h2>
           <p className={styles.text}>
@@ -114,15 +114,27 @@ export default function PracticeAreas() {
           </p>
         </div>
 
-        {/* Right Column: Grid */}
-        <div className={styles.rightColGrid}>
-          {AREAS_DATA.map((area, index) => (
-            <div key={index} className={styles.gridItem}>
-              <div className={styles.iconWrapper}>{area.icon}</div>
-              <h3 className={styles.itemTitle}>{area.title}</h3>
-              <p className={styles.itemDesc}>{area.desc}</p>
-            </div>
-          ))}
+        {/* Content Grid: Photo + Areas */}
+        <div className={styles.contentGrid}>
+          {/* Left Column: Photo */}
+          <div className={styles.imageWrapper}>
+            <img 
+              src="/assets/foto_kleber3.jpeg" 
+              alt="Kleber Freitas em atuação" 
+              className={styles.practiceImage}
+            />
+          </div>
+
+          {/* Right Column: Grid */}
+          <div className={styles.rightColGrid}>
+            {AREAS_DATA.map((area, index) => (
+              <div key={index} className={styles.gridItem}>
+                <div className={styles.iconWrapper}>{area.icon}</div>
+                <h3 className={styles.itemTitle}>{area.title}</h3>
+                <p className={styles.itemDesc}>{area.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -8,6 +8,13 @@ export default function About() {
         <div className={styles.leftCol}>
           <span className="section-subtitle">sobre</span>
           <h2 className={styles.title}>O escritório.</h2>
+          <div className={styles.imageWrapper}>
+            <img 
+              src="/assets/kleber_e_caio.jpeg" 
+              alt="Equipe Kleber Freitas Advocacia" 
+              className={styles.aboutImage}
+            />
+          </div>
         </div>
 
         {/* Right Column: Narrative and Pillars */}

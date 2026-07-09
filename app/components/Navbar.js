@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { WhatsappLogo } from "@phosphor-icons/react"; // Importação do ícone
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -23,7 +22,7 @@ export default function Navbar() {
         <a href="#" className={styles.logoWrapper} onClick={closeMenu}>
           <Image
             src="/assets/brand.png"
-            alt="Kleber Freitas Advocacia"
+            alt="Marques & Associados"
             width={58}
             height={58}
             style={{ objectFit: "contain" }}
@@ -34,7 +33,7 @@ export default function Navbar() {
         </a>
  
         {/* Navigation Links */}
-        <ul className={`${styles.navLinks} ${isOpen ? styles.open : ""}`}>
+        <ul className={`${styles.navLinks} ${isOpen ? "open" : ""}`}>
           <li>
             <a href="#sobre" className={styles.navLink} onClick={closeMenu}>
               Sobre
@@ -67,7 +66,7 @@ export default function Navbar() {
                 className={styles.ctaMobile}
                 onClick={closeMenu}
               >
-                <WhatsappLogo size={20} weight="fill" /> WhatsApp 
+                WhatsApp 
               </a>
             </li>
           )}
@@ -75,12 +74,12 @@ export default function Navbar() {
 
         {/* CTA Button Desktop */}
         <a href="https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0" className={styles.ctaButton}>
-          <WhatsappLogo size={18} weight="fill" /> WhatsApp
+          WhatsApp <span style={{ fontSize: "1rem" }}></span>
         </a>
 
         {/* Burger Button */}
         <button
-          className={`${styles.burger} ${isOpen ? styles.open : ""}`}
+          className={`${styles.burger} ${isOpen ? "open" : ""}`}
           onClick={toggleMenu}
           aria-label="Abrir menu"
         >
