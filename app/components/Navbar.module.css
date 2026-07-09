@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 80px;
-  background-color: rgba(25, 35, 45, 0.475);
+  background-color: rgba(25, 35, 45, 0.816);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(233, 233, 233, 0.08);
@@ -69,6 +69,7 @@
   padding: 0.75rem 1.5rem;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
 }
@@ -146,7 +147,7 @@
   }
 
   .ctaMobile {
-    display: block;
+    display: flex;
     margin-top: 2rem;
     width: 100%;
     text-align: center;
@@ -154,5 +155,8 @@
     color: #fff;
     padding: 1rem;
     font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 }

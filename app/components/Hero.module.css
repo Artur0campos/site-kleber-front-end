@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--bg-dark);
-  padding: 120px 0 0 0; /* Add top padding to avoid overlap with navbar */
+  padding: 120px 0 40px 0;
   overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(25, 35, 45, 0.75) 0%, rgba(25, 35, 45, 0.96) 100%);
+  background: radial-gradient(circle at 30% 30%, rgba(25, 35, 45, 0.75) 0%, rgba(25, 35, 45, 0.96) 100%);
   z-index: 2;
 }
 
@@ -32,11 +32,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 5rem;
 }
 
 .heroContent {
-  max-width: 720px;
+  max-width: 960px; /* Expandido para acomodar a logo e o texto lado a lado confortavelmente */
 }
 
 .subtitleBadge {
@@ -48,7 +47,7 @@
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .subtitleBadge::before {
@@ -59,18 +58,34 @@
   display: inline-block;
 }
 
-.title {
-  font-size: 4rem;
-  font-weight: 900;
-  color: var(--text-light);
-  line-height: 1.15;
+/* Container que coloca a imagem e o H1 lado a lado */
+.titleFlexBlock {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem; /* Espaço entre a imagem e o início do texto */
   margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem;
-  }
+/* Caixa da imagem ao lado do título */
+.brandSideWrapper {
+  flex-shrink: 0; /* Impede a imagem de esmagar ou diminuir */
+  display: flex;
+  align-items: center;
+}
+
+.brandSideImage {
+  height: 140px; /* Altura robusta para se equiparar às duas linhas do H1 */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.4));
+}
+
+.title {
+  font-size: 3.5rem; /* Leve ajuste no tamanho para equilibrar horizontalmente */
+  font-weight: 900;
+  color: var(--text-light);
+  line-height: 1.2;
+  margin-bottom: 0; /* Margem removida pois o container pai já gerencia o espaçamento */
 }
 
 .titleHighlight {
@@ -82,6 +97,7 @@
   color: rgba(233, 233, 233, 0.8);
   margin-bottom: 3rem;
   line-height: 1.7;
+  max-width: 720px; /* Mantém o parágrafo em uma largura boa para leitura */
 }
 
 .buttonGroup {
@@ -90,72 +106,50 @@
   flex-wrap: wrap;
 }
 
-/* Stats Bar at the bottom */
-.statsSection {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  background-color: rgba(25, 35, 45, 0.95);
-  border-top: 1px solid rgba(233, 233, 233, 0.08);
-  backdrop-filter: blur(10px);
-}
+/* Responsividade para telas menores */
+@media (max-width: 992px) {
+  .titleFlexBlock {
+    gap: 1.5rem;
+  }
+  
+  .brandSideImage {
+    height: 110px;
+  }
 
-.statsContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-}
-
-.statItem {
-  padding: 3rem 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.statItem:not(:last-child) {
-  border-right: 1px solid rgba(233, 233, 233, 0.08);
-}
-
-.statNumber {
-  font-family: var(--font-serif);
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--color-bronze);
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-
-.statLabel {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: rgba(233, 233, 233, 0.6);
-  text-transform: uppercase;
+  .title {
+    font-size: 2.8rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-    padding-top: 100px;
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .statsContainer {
-    grid-template-columns: 1fr;
+  /* No mobile, o flex muda para coluna para o texto não ficar espremido */
+  .titleFlexBlock {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
   }
 
-  .statItem {
-    padding: 2rem 1rem;
+  .brandSideImage {
+    height: 90px; /* Reduz o tamanho da logo no celular */
   }
 
-  .statItem:not(:last-child) {
-    border-right: none;
-    border-bottom: 1px solid rgba(233, 233, 233, 0.08);
+  .title {
+    font-size: 2.3rem;
   }
 
-  .statNumber {
-    font-size: 2.75rem;
+  .subtitleBadge {
+    justify-content: center;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+    width: 100%;
   }
 }

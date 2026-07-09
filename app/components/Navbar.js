@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { WhatsappLogo } from "@phosphor-icons/react"; // Importação do ícone
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -22,9 +23,9 @@ export default function Navbar() {
         <a href="#" className={styles.logoWrapper} onClick={closeMenu}>
           <Image
             src="/assets/brand.png"
-            alt="Marques & Associados"
-            width={32}
-            height={32}
+            alt="Kleber Freitas Advocacia"
+            width={58}
+            height={58}
             style={{ objectFit: "contain" }}
           />
           <span className={styles.logoText}>
@@ -62,19 +63,19 @@ export default function Navbar() {
           {isOpen && (
             <li style={{ width: "100%" }}>
               <a
-                href="#contato"
+                href="https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0"
                 className={styles.ctaMobile}
                 onClick={closeMenu}
               >
-                Consultoria →
+                <WhatsappLogo size={20} weight="fill" /> WhatsApp 
               </a>
             </li>
           )}
         </ul>
 
         {/* CTA Button Desktop */}
-        <a href="#contato" className={styles.ctaButton}>
-          Consultoria <span style={{ fontSize: "1rem" }}>→</span>
+        <a href="https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0" className={styles.ctaButton}>
+          <WhatsappLogo size={18} weight="fill" /> WhatsApp
         </a>
 
         {/* Burger Button */}
