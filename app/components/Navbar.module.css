@@ -60,7 +60,7 @@
 }
 
 .ctaButton {
-  background-color: var(--color-bronze);
+  background-color: darkgreen;
   color: #FFFFFF;
   font-size: 0.85rem;
   font-weight: 600;
@@ -75,7 +75,7 @@
 }
 
 .ctaButton:hover {
-  background-color: var(--color-bronze-hover);
+  background-color: rgb(21, 179, 21);
   transform: translateY(-1px);
 }
 
@@ -151,7 +151,7 @@
     margin-top: 2rem;
     width: 100%;
     text-align: center;
-    background-color: var(--color-bronze);
+    background-color: darkgreen;
     color: #fff;
     padding: 1rem;
     font-weight: 600;

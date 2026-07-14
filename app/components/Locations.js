@@ -51,7 +51,7 @@ export default function Locations() {
                 </div>
                 <div className={styles.infoItem}>
                   <div className={styles.iconWrapper}><PhoneIcon /></div>
-                  <p>+55 (75) 3000-1234</p>
+                  <p>+55 (75) 98836-8663</p>
                 </div>
               </div>
             </div>

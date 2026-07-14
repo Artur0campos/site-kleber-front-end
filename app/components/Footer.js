@@ -18,13 +18,9 @@ export default function Footer() {
                 style={{ objectFit: "contain" }}
               />
               <span className={styles.logoText}>
-                Marques <span>& Associados</span>
+                Kleber Freitas <span>Advocacia</span>
               </span>
             </div>
-            <p className={styles.brandDesc}>
-              Advocacia full-service com sede em São Paulo e Rio de Janeiro.
-              OAB/SP 12.345.
-            </p>
           </div>
 
           {/* Navigation */}
@@ -63,11 +59,12 @@ export default function Footer() {
           <div>
             <h4 className={styles.colTitle}>Contato</h4>
             <div className={styles.contactInfo}>
-              <a href="mailto:contato@marquesadv.com.br">
-                contato@marquesadv.com.br
+              <a href="mailto:kleber@kleberfreitasadvocacia.com.br">
+                kleber@kleberfreitasadvocacia.com.br
               </a>
-              <a href="tel:+551130001234">+55 (11) 3000-1234</a>
-              <p>Av. Faria Lima, 3477 — SP</p>
+              <a href="tel:+5575988368663">(75) 98836-8663</a>
+              <p>R. Campos Sales, 91 — 1º Andar
+Ponto Central, Feira de Santana — BA</p>
             </div>
           </div>
         </div>

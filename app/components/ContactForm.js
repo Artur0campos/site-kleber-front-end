@@ -105,6 +105,17 @@ export default function ContactForm() {
               </div>
             </div>
 
+             {/* Phone */}
+            <div className={styles.channelItem}>
+              <div className={styles.iconBox}><PhoneIcon /></div>
+              <div className={styles.channelInfo}>
+                <span className={styles.channelLabel}>Segundo Telefone / WhatsApp</span>
+                <a href="https://wa.me/5575981300751" target="_blank" rel="noopener noreferrer" className={styles.channelValue}>
+                  (75) 98130-0751
+                </a>
+              </div>
+            </div>
+
             {/* Hours */}
             <div className={styles.channelItem}>
               <div className={styles.iconBox}><BriefcaseIcon /></div>
