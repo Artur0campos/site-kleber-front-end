@@ -14,7 +14,15 @@ export const metadata = {
 export default async function BlogPage() {
   const posts = await getPosts();
 
-  const displayPosts = posts.map((post) => {
+  const sortedPosts = [...posts].sort((a, b) => {
+    const attrsA = a.attributes || a;
+    const attrsB = b.attributes || b;
+    const dateA = new Date(attrsA.publishedAt || attrsA.createdAt || 0);
+    const dateB = new Date(attrsB.publishedAt || attrsB.createdAt || 0);
+    return dateB - dateA;
+  });
+
+  const displayPosts = sortedPosts.map((post) => {
     const attrs = post.attributes || post;
 
     let postDate = "INSIGHT";

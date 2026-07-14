@@ -38,8 +38,17 @@ export default function BlogSection({ posts = [] }) {
   const hasApiPosts = posts && posts.length > 0;
 
   const displayPosts = hasApiPosts
-    ? posts.slice(0, 3).map((post) => {
-        const attrs = post.attributes || post;
+    ? [...posts]
+        .sort((a, b) => {
+          const attrsA = a.attributes || a;
+          const attrsB = b.attributes || b;
+          const dateA = new Date(attrsA.publishedAt || attrsA.createdAt || 0);
+          const dateB = new Date(attrsB.publishedAt || attrsB.createdAt || 0);
+          return dateB - dateA; // Mais recente primeiro
+        })
+        .slice(0, 3)
+        .map((post) => {
+          const attrs = post.attributes || post;
 
         // Formata data do Strapi
         let postDate = "INSIGHT";
