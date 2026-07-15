@@ -69,6 +69,8 @@ export default function Navbar() {
                 href="https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0"
                 className={styles.ctaMobile}
                 onClick={closeMenu}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 WhatsApp 
               </a>
@@ -77,7 +79,7 @@ export default function Navbar() {
         </ul>
 
         {/* CTA Button Desktop */}
-        <a href="https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0" className={styles.ctaButton}>
+        <a href="https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
           WhatsApp <span style={{ fontSize: "1rem" }}></span>
         </a>
 

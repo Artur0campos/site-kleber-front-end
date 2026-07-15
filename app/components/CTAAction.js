@@ -28,7 +28,8 @@ export default function CTAAction() {
           <h2 className={styles.title}>Consulte seus processos.</h2>
           <p className={styles.description}>
             Não perca nenhum detalhe da sua causa. Acesse o sistema de
-            acompanhamento processual com suas credenciais.
+            acompanhamento processual com suas credenciais. Caso não tenha login, entre em contato e solicite já o seu.
+          
           </p>
         </div>
 
