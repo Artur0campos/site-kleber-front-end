@@ -15,7 +15,7 @@
   z-index: 1;
   background-image: url('/assets/coverKleberAdv.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   opacity: 0.85; /* Um pouco mais visível, mas ainda mantendo a discrição */
   filter: grayscale(75%); /* Integra-se com a identidade visual mantendo a discrição */
