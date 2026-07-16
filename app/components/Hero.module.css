@@ -13,18 +13,18 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: url('/assets/coverKleberAdv.jpeg');
+  background-image: url('/assets/cover.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  opacity: 0.85; /* Um pouco mais visível, mas ainda mantendo a discrição */
-  filter: grayscale(75%); /* Integra-se com a identidade visual mantendo a discrição */
+  opacity: 0.80; /* Um pouco mais visível, mas ainda mantendo a discrição */
+  filter: grayscale(20%); /* Integra-se com a identidade visual mantendo a discrição */
 }
 
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(25, 35, 45, 0.75) 0%, rgba(25, 35, 45, 0.96) 100%);
+  background: radial-gradient(circle at 30% 30%, rgba(25, 35, 45, 0.75) 0%, rgba(25, 35, 45, 0.548) 100%);
   z-index: 2;
 }
 

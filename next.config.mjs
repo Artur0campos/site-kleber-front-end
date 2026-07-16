@@ -3,6 +3,11 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
+        protocol: 'https',
+        hostname: 'n8n-artur-strapi.wlpas2.easypanel.host',
+
+      },
+      {
         protocol: "http",
         hostname: "localhost",
         port: "1337",
