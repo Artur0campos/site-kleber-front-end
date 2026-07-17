@@ -20,6 +20,12 @@
   z-index: 1;
 }
 
+.container span{
+  color: #b2bfcb;
+  font-style: italic;
+  font-weight: 100;
+}
+
 .container {
   position: relative;
   z-index: 2;

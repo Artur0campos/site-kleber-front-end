@@ -99,8 +99,8 @@ export default function ContactForm() {
               <div className={styles.iconBox}><PhoneIcon /></div>
               <div className={styles.channelInfo}>
                 <span className={styles.channelLabel}>Telefone / WhatsApp</span>
-                <a href="https://wa.me/5575988368663" target="_blank" rel="noopener noreferrer" className={styles.channelValue}>
-                  (75) 98836-8663
+                <a href="https://wa.me/5575981300751" target="_blank" rel="noopener noreferrer" className={styles.channelValue}>
+                  (75) 98130-0751
                 </a>
               </div>
             </div>
@@ -110,8 +110,8 @@ export default function ContactForm() {
               <div className={styles.iconBox}><PhoneIcon /></div>
               <div className={styles.channelInfo}>
                 <span className={styles.channelLabel}>Segundo Telefone / WhatsApp</span>
-                <a href="https://wa.me/5575981300751" target="_blank" rel="noopener noreferrer" className={styles.channelValue}>
-                  (75) 98130-0751
+                <a href="https://wa.me/5575988368663" target="_blank" rel="noopener noreferrer" className={styles.channelValue}>
+                  (75) 98836-8663
                 </a>
               </div>
             </div>
@@ -122,8 +122,7 @@ export default function ContactForm() {
               <div className={styles.channelInfo}>
                 <span className={styles.channelLabel}>Horário</span>
                 <span className={styles.channelValue}>
-                  Seg — Qui · 08h às 12h e 13:30 às 17h<br />
-                  Sexta · 08h às 12h e 13:30 às 16h
+                  Seg — Sexta · 08:30h às 12h e 13:30 às 17h
                 </span>
               </div>
             </div>

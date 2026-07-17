@@ -18,7 +18,7 @@ export default function Footer() {
                 style={{ objectFit: "contain" }}
               />
               <span className={styles.logoText}>
-                Kleber Freitas <span>Advocacia</span>
+                Kleber Freitas <span>Advogados Associdados</span>
               </span>
             </div>
           </div>
@@ -62,8 +62,8 @@ export default function Footer() {
               <a href="mailto:kleber@kleberfreitasadvocacia.com.br">
                 kleber@kleberfreitasadvocacia.com.br
               </a>
-              <a href="tel:+5575988368663">(75) 98836-8663</a>
-              <p>R. Campos Sales, 91 — 1º Andar
+              <a  href="https://wa.me/5575981300751" target="_blank">(75) 98130-0751</a>
+              <p>CEP: 44075-325 <br />R. Campos Sales, 91 — 1º Andar
 Ponto Central, Feira de Santana — BA</p>
             </div>
           </div>
@@ -74,7 +74,7 @@ Ponto Central, Feira de Santana — BA</p>
 
         {/* Bottom copyright row */}
         <div className={styles.bottomRow}>
-          <p>© 2026 Marques & Associados. Todos os direitos reservados.</p>
+          <p>© 2026 Kleber Freitas advogados associdados. Todos os direitos reservados.</p>
           <div className={styles.bottomLinks}>
             <a href="#privacidade" className={styles.bottomLink}>
               Política de Privacidade

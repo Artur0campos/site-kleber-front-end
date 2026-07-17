@@ -22,7 +22,7 @@ export default function About() {
           <p className={styles.text}>
             A justiça é o princípio que preserva a ordem social e garante os direitos de cada cidadão. Nesse contexto, a advocacia exerce papel fundamental na defesa dessas garantias, pautada pelos princípios do Estado Democrático de Direito.
 
-O escritório Kleber Freitas Advocacia atua com dedicação, ética e profissionalismo, oferecendo atendimento personalizado e buscando sempre as melhores soluções para cada cliente. Nossa atuação é fundamentada em constante atualização jurídica, tecnologia e compromisso com a excelência na prestação de serviços.
+O escritório Kleber Freitas Advogados Associados atua com dedicação, ética e profissionalismo, oferecendo atendimento personalizado e buscando sempre as melhores soluções para cada cliente. Nossa atuação é fundamentada em constante atualização jurídica, tecnologia e compromisso com a excelência na prestação de serviços.
 
 Com reputação construída sobre honestidade, perseverança e resultados, trabalhamos para defender os direitos de nossos clientes com eficiência, responsabilidade e respeito à justiça.
           </p>

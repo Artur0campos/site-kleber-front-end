@@ -29,8 +29,8 @@ export default function CTAAction() {
           <p className={styles.description}>
             Não perca nenhum detalhe da sua causa. Acesse o sistema de
             acompanhamento processual com suas credenciais. Caso não tenha login, entre em contato e solicite já o seu.
-          
           </p>
+          <span className="obs">processos de familia e segredo de justiça não podem ser consultados por esta plataforma</span>
         </div>
 
         <div className={styles.formSide}>
@@ -43,7 +43,7 @@ export default function CTAAction() {
             onSubmit={handleSubmit}
             className={styles.loginForm}
           >
-            <div className={styles.formTitle}>Controle de Processos</div>
+            <div className={styles.formTitle}>Consulta de Processos</div>
 
             <div className={styles.fieldGroup}>
               <label htmlFor="campo_usuario_caixa_integra" className={styles.label}>

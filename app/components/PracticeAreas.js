@@ -45,15 +45,14 @@ const ScaleIcon = () => (
 );
 
 const TempleIcon = () => (
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-<path d="M2 22h20" />
-<path d="M4 22v-9" />
-<path d="M9 22v-9" />
-<path d="M15 22v-9" />
-<path d="M20 22v-9" />
-<path d="M12 2l10 5H2L12 2z" />
-</svg>
-
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M2 22h20" />
+    <path d="M4 22v-9" />
+    <path d="M9 22v-9" />
+    <path d="M15 22v-9" />
+    <path d="M20 22v-9" />
+    <path d="M12 2l10 5H2L12 2z" />
+  </svg>
 );
 
 const HammerIcon = () => (
@@ -64,6 +63,21 @@ const HammerIcon = () => (
   </svg>
 );
 
+/* Ícone Novo: Escudo para Direito Militar */
+const ShieldIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+  </svg>
+);
+
+/* Ícone Novo: Pasta de Processo com Alerta para Sindicância, PAD e Penal Militar */
+const FolderWarningIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+    <line x1="12" y1="11" x2="12" y2="15" />
+    <line x1="12" y1="18" x2="12.01" y2="18" />
+  </svg>
+);
 
 const AREAS_DATA = [
   {
@@ -84,20 +98,28 @@ const AREAS_DATA = [
   {
     icon: <ScaleIcon />,
     title: "Direito Administrativo",
-    desc: "consultiva, preventiva e contenciosa envolvendo a relação entre particulares, empresas e o Poder Público.",
+    desc: "Consultiva, preventiva e contenciosa envolvendo a relação entre particulares, empresas e o Poder Público.",
   },
   {
     icon: <HammerIcon />,
     title: "Direito Penal",
     desc: "Defesa criminal estratégica em todas as instâncias.",
   },
-
   {
     icon: <TempleIcon />,
-    title: "Direito Tributario",
+    title: "Direito Tributário",
     desc: "Planejamento fiscal estratégico, otimização de tributos e defesa rigorosa em litígios judiciais ou administrativos."
-    
   },
+  {
+    icon: <ShieldIcon />,
+    title: "Direito Militar",
+    desc: "Suporte especializado para militares, abrangendo direitos, vantagens corporativas e regimes estatutários específicos."
+  },
+  {
+    icon: <FolderWarningIcon />,
+    title: "Sindicância, PPS, PAD e Penal Militar",
+    desc: "Defesa técnica e estratégica em procedimentos preparatórios, processos administrativos disciplinares e crimes de competência da Justiça Militar."
+  }
 ];
 
 export default function PracticeAreas() {

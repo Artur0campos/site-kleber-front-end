@@ -47,7 +47,7 @@ const SOCIAL_CHANNELS = [
     name: "Whatsapp",
     user: "Kleber Freitas Advocacia",
     icon: <WhatsAppIcon />,
-    link: "https://api.whatsapp.com/send/?phone=5575988368663&text&type=phone_number&app_absent=0",
+    link: "https://api.whatsapp.com/send/?phone=5575981300751&text&type=phone_number&app_absent=0",
   },
 ];
 
