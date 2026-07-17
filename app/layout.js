@@ -18,7 +18,7 @@ const merriweatherSans = Merriweather_Sans({
 export const metadata = {
   title: "Kleber Freitas Advocacia",
   description:
-    "Defesa estratégica. Soluções jurídicas sob medida. Advocacia full-service com sede em São Paulo e Rio de Janeiro.",
+    "Soluções jurídicas sob medida. Advocacia full-service com sede em Feira de Santana e Salvador.",
 };
 
 export default function RootLayout({ children }) {
