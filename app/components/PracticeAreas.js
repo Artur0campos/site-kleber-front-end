@@ -63,19 +63,18 @@ const HammerIcon = () => (
   </svg>
 );
 
-/* Ícone Novo: Escudo para Direito Militar */
 const ShieldIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
 
-/* Ícone Novo: Pasta de Processo com Alerta para Sindicância, PAD e Penal Militar */
-const FolderWarningIcon = () => (
+/* Ícone Novo: Sacola de compras sofisticada para Direito do Consumidor */
+const ShoppingBagIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-    <line x1="12" y1="11" x2="12" y2="15" />
-    <line x1="12" y1="18" x2="12.01" y2="18" />
+    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+    <line x1="3" y1="6" x2="21" y2="6" />
+    <path d="M16 10a4 4 0 0 1-8 0" />
   </svg>
 );
 
@@ -116,9 +115,9 @@ const AREAS_DATA = [
     desc: "Suporte especializado para militares, abrangendo direitos, vantagens corporativas e regimes estatutários específicos."
   },
   {
-    icon: <FolderWarningIcon />,
-    title: "Sindicância, PPS, PAD e Penal Militar",
-    desc: "Defesa técnica e estratégica em procedimentos preparatórios, processos administrativos disciplinares e crimes de competência da Justiça Militar."
+    icon: <ShoppingBagIcon />,
+    title: "Direito do Consumidor",
+    desc: "Defesa de direitos nas relações de consumo, resolução de conflitos, práticas abusivas e responsabilidade civil de fornecedores."
   }
 ];
 
