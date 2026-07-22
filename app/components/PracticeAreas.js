@@ -112,7 +112,7 @@ const AREAS_DATA = [
   {
     icon: <ShieldIcon />,
     title: "Direito Militar",
-    desc: "Suporte especializado para militares, abrangendo direitos, vantagens corporativas e regimes estatutários específicos."
+    desc: "Suporte especializado para militares, abrangendo Sindicância, PDS, PAD, IPM, Fazenda Pública e Penal Militar."
   },
   {
     icon: <ShoppingBagIcon />,

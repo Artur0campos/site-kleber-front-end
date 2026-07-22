@@ -17,37 +17,85 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
 .logoItem {
-  background-color: rgba(25, 35, 45, 0.02);
-  border: 1px solid rgba(25, 35, 45, 0.06);
-  height: 70px;
+  position: relative;
+  background-color: #ffffff; /* Fundo branco destacado */
+  border: 1px solid rgba(25, 35, 45, 0.1);
+  height: 170px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  color: rgba(25, 35, 45, 0.45);
-  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.linkItem {
+  cursor: pointer;
+}
+
+/* Logos totalmente visíveis, coloridas e bem nítidas */
+.partnerLogo {
+  max-height: 100px;
+  max-width: 85%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.95;
   transition: all 0.3s ease;
 }
 
 .logoItem:hover {
-  background-color: #FFFFFF;
-  border-color: rgba(135, 76, 35, 0.25);
-  color: var(--color-bronze);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(25, 35, 45, 0.03);
+  background-color: #ffffff;
+  border-color: #26bdb0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(9, 55, 51, 0.08);
+}
+
+.logoItem:hover .partnerLogo {
+  opacity: 1;
+  transform: scale(1.04); /* Sutil efeito de zoom na logo no hover */
+}
+
+/* Tooltip com endereço da CM Advocacia */
+.addressTooltip {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #093733;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logoItem:hover .addressTooltip {
+  opacity: 1;
+  visibility: visible;
+  bottom: -42px;
 }
 
 @media (max-width: 992px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
 }
@@ -55,5 +103,19 @@
 @media (max-width: 576px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .logoItem {
+    height: 85px;
+    padding: 0.75rem;
+  }
+
+  .partnerLogo {
+    max-height: 48px;
+  }
+
+  .addressTooltip {
+    display: none;
   }
 }

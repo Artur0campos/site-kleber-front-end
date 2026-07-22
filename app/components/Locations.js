@@ -21,7 +21,7 @@ export default function Locations() {
         {/* Header */}
         <div className={styles.titleGroup}>
           <span className="section-subtitle">Onde Estamos</span>
-          <h2 className={styles.title}>Dois escritórios, uma só exigência.</h2>
+          <h2 className={styles.title}>Dois escritórios, uma só competência.</h2>
         </div>
 
         {/* Locations Grid */}
@@ -45,8 +45,9 @@ export default function Locations() {
                 <div className={styles.infoItem}>
                   <div className={styles.iconWrapper}><PinIcon /></div>
                   <p>
+                    CEP: 44075-325 <br />
                     R. Campos Sales, 91 — 1º Andar<br />
-                    Ponto Central, Feira de Santana — BA
+                    Ponto Central, Feira de Santana/BA
                   </p>
                 </div>
                 <div className={styles.infoItem}>
@@ -76,13 +77,14 @@ export default function Locations() {
                 <div className={styles.infoItem}>
                   <div className={styles.iconWrapper}><PinIcon /></div>
                   <p>
+                    CEP: 41820-020 <br />
                     Av. Tancredo Neves, 1221<br />
-                    Ed. Catabas Tower, Sala 913 — Caminho das Árvores
+                    Ed. Catabas Tower, Sala 913 — Caminho das Árvores, Salvador/BA
                   </p>
                 </div>
                 <div className={styles.infoItem}>
                   <div className={styles.iconWrapper}><PhoneIcon /></div>
-                  <p>+55 (71) 3500-5678</p>
+                  <p>+55 (75) 98130-0751</p>
                 </div>
               </div>
             </div>

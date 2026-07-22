@@ -122,7 +122,7 @@ export default function ContactForm() {
               <div className={styles.channelInfo}>
                 <span className={styles.channelLabel}>Horário</span>
                 <span className={styles.channelValue}>
-                  Seg — Sexta · 08:30h às 12h e 13:30 às 17h
+                  Seg — Sexta · 08:00h às 17:00h
                 </span>
               </div>
             </div>
